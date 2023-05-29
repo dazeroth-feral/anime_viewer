@@ -1,0 +1,12 @@
+.content {
+    display: flex;
+    align-items: center;
+
+    min-height: 3em;
+
+    background-color: #30363d;
+    border-radius: 10px 10px 0 0;
+    color: white;
+
+    padding-left: 1em;
+}

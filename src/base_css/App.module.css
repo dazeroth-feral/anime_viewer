@@ -1,0 +1,22 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+      /*  media  */
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}

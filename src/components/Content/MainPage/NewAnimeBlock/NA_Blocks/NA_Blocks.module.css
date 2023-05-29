@@ -1,0 +1,30 @@
+.content{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 1em;
+}
+
+.anime_Img{
+    width: 245px;
+    height: 299px;
+}
+
+.text_Block{
+    padding-left: 1em;
+}
+
+.NavLink_AnimePage{
+    color: black;
+    font-weight: bold;
+    padding-bottom: 2em;
+    text-decoration: none;
+
+    font-size: 28px;
+}
+
+.anime_Descroptions{
+    overflow-y: auto;
+
+    font-size: 18px;
+}
