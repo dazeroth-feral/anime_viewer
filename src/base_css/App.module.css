@@ -7,6 +7,10 @@
   padding: 0 16px;
 }
 
+.main{
+  min-height: 86.3vh;
+}
+
       /*  media  */
 
 @media screen and (max-width: 767px) {

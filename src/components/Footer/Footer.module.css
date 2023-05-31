@@ -2,11 +2,15 @@
     display: flex;
     align-items: center;
 
-    min-height: 3em;
-
     background-color: #30363d;
     border-radius: 10px 10px 0 0;
     color: white;
 
-    padding-left: 1em;
+    padding: 1em;
+
+    border-radius: 0 0 2em 2em;
+
+    border-radius: 2em 2em 0em 0em;
+
+    background-color: rgba(0, 0, 0, 0.5);
 }

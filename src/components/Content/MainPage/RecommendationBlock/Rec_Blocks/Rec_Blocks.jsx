@@ -2,22 +2,26 @@ import css from "./Rec_Blocks.module.css";
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import CircleBlock from "./CircleBlock/CircleBlock";
 
-const Rec_Blocks = ({props}) => {
+const Rec_Blocks = ({props, state}) => {
     return(
         <div className={css.content}>
             <img src={props.img_Path} className={css.anime_Image} />
+            <div className={css.image_overlay}></div> 
 
-            <div className={css.anime_Raiting}>
+            {/* <div className={css.anime_Raiting}>
                 {props.anime_Raiting}
-            </div>
+            </div> */}
 
-            <div className={css.anime_Name}>
-                {props.anime_Name}
-            </div>
+            <div className={css.title_and_description_anime}>
+                <div className={css.anime_Name}>
+                    {props.anime_Name}
+                </div>
 
-            <div className={css.anime_Description}>
-                {props.anime_Description}
+                <div className={css.anime_Description}>
+                    {props.anime_Description}
+                </div>
             </div>
 
             <div className={css.Link_and_Litle_Info}>
@@ -25,16 +29,17 @@ const Rec_Blocks = ({props}) => {
                     <NavLink to={props.nav_Link_Path} className={css.link_to_Anime}>Перегляд ▶</NavLink>
                 </div>
                 <div className={css.litle_Info}>
-                    <span className={css.gray}>{props.date_Present}</span>                    
-                    {props.anime_Type}
+                    <div className={css.litle_Info_date_Present}>
+                        <span className={css.gray}>{props.date_Present}</span>
+                    </div>                    
+                    <div className={css.litle_Info_anime_Type}>
+                        {props.anime_Type}
+                    </div>
                 </div>
             </div>
 
             <div className={css.convas_More_Recommendation}>
-                <div className={css.circle} />
-                <div className={css.circle} />
-                <div className={css.circle} />
-                <div className={css.circle} />
+                <CircleBlock state={state}/>
             </div>            
         </div>
     )

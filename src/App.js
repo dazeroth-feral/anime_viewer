@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import css from './base_css/App.module.css';
 
 import Header from './components/Header/Header';
 import Footer from "./components/Footer/Footer";
+import MyModal from "./components/MyModal/MyModal"
 
 import RoutesBlock from './components/Routes/RoutesBlock';
 
@@ -16,7 +17,7 @@ function App({state}) {
         <RoutesBlock state={state} />
       </main>
 
-      <Footer className={css.Footer} />      
+      <Footer className={css.Footer} />        
     </div>
   );
 }

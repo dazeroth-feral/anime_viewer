@@ -11,8 +11,11 @@ const RecommendationBlock = ({state}) => {
     let recommendations_Elements = recommendations_Object.map((recommendation) => (
         <Rec_Blocks
             props={recommendation}
+            state={state}
         />
     ))
+
+    console.log(recommendations_Elements)
 
     return(
         <div className={css.content}>

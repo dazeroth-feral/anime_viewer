@@ -2,17 +2,33 @@
     display: flex;
     flex-direction: row;
 
-    margin-bottom: 1em;
+    padding: 4px;
+
+    width: 49%;
+
+    border: 1px black solid;
+}
+
+.content, .content a{
+    color: white;
 }
 
 .anime_Img{
-    width: 245px;
-    height: 299px;
+    width: 200px;
+    height: 300px;
 }
 
 .text_Block{
     padding-left: 1em;
+
+    /* Підняття опису відносно нижньої грані картки */
+    margin-bottom: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .NavLink_AnimePage{
     color: black;
@@ -21,6 +37,15 @@
     text-decoration: none;
 
     font-size: 28px;
+}
+
+.anime_Raiting{
+    /* Опускання до низу відносно назви та посилання на аніме */
+    padding-top: 1em;
+}
+
+.NavLink_AnimePage:hover{
+    text-decoration: underline;
 }
 
 .anime_Descroptions{

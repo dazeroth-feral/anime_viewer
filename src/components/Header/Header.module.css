@@ -1,7 +1,8 @@
 .content {
     display: flex;
     justify-content: space-between;
-    margin-top: 2em;
+
+    margin-top: 1.8em;
 }  
 
 .content a{
@@ -9,6 +10,7 @@
     text-decoration: none;
     font-family: 'Inter';
     font-style: normal;
+    /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); */
 }
 
 .NavLink_SiteName{
@@ -17,11 +19,23 @@
     line-height: 44px;
 }
 
+.NavLink_Search, .NavLink_PO{
+    width: 32px;
+    height: 32px;
+}
+
+.NavLinks{
+    display: flex;
+    align-items: center;
+}
+
 .NavLinks > a{
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    margin-right: 4em;
+
+    /* відсування іконок і елементів зправа на неадері */
+    margin-left: 2em;
 }
 
 .blue{

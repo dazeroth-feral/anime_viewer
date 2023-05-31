@@ -1,6 +1,12 @@
-.block{
-    padding-top: 1em;
-    display: flex;
-    flex-direction: column;
+.content{
     min-height: 12em;
+    
+    display: flex;
+    flex-direction: row;
+
+    gap: 4px;
+    
+    flex-wrap: wrap;
+
+    padding-bottom: 1em;
 }

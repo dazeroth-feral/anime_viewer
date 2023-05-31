@@ -1,0 +1,33 @@
+.content{
+    display: flex;
+}
+
+.content :last-child{
+    margin: 3em 0 4em 0;
+}
+
+.circle{
+    width: 36px;
+    height: 36px;
+
+    border: 4px solid white;
+    border-radius: 500px;
+
+    background-color: none;
+
+    /* ПІДНЯТТЯ загальної інформації що вище кружечків + підняття самих КУРЖЕЧКІВ */
+    margin: 3em 35px 4em 0;
+}
+
+.circle_active{
+    width: 36px;
+    height: 36px;
+
+    border: 4px solid white;
+    border-radius: 500px;
+
+    background-color: white;
+
+    /* ПІДНЯТТЯ загальної інформації що вище кружечків + підняття самих КУРЖЕЧКІВ */
+    margin: 3em 35px 4em 0;    
+}
