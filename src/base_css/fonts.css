@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "FD_Black";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-Black.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_Bold";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_ExtraBold";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_ExtraLight";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_Light";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_Medium";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_Regular";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_SemiBold";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "FD_Thin";
+	src: url("../../public/fonts/FixelDisplay/FixelDisplay-Thin.ttf") format("truetype");
+}

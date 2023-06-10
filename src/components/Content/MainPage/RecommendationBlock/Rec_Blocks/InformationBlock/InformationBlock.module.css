@@ -4,9 +4,7 @@
 }
 
 .anime_Name{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
+    font-family: 'FD_SemiBold';
     font-size: 36px;
 
     color: white;
@@ -17,7 +15,7 @@
 }
 
 .anime_Description{
-    font-family: 'Inter';
+    font-family: 'FD_Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -27,4 +25,4 @@
     max-width: 40vw;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url("../../../../../../base_css/fonts.css");

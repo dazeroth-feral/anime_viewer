@@ -8,8 +8,7 @@
 .content a {
     color: #FFFFFF;
     text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'FD_Medium';
     /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); */
 
     display: flex;
@@ -17,8 +16,7 @@
 }
 
 .NavLink_SiteName{
-    font-family: 'Inter';
-    font-style: normal;
+    font-family: 'FD_Bold';
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;

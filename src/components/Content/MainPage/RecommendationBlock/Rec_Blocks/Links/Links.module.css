@@ -3,7 +3,7 @@
 }
 
 .container_for__Link_to_Anime{
-    font-family: 'Inter';
+    font-family: 'FD_Medium';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
 
-    font-family: 'Inter';
+    font-family: 'FD_Medium';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -59,4 +59,4 @@
     align-items: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url("../../../../../../base_css/fonts.css");
