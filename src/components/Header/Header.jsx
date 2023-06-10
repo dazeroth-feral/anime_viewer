@@ -53,7 +53,7 @@ const Header = (props) => {
                     <button><NavLink
                         className={css.more_search_optional}
                         to="/"   
-                    >Розширений пошук</NavLink></button>
+                    >Розширений пошук, ha!</NavLink></button>
                 </MyModal>
             </div>
         </div>
