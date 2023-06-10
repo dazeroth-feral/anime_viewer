@@ -1,0 +1,47 @@
+.content{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 1.8em;
+}
+
+.card_text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+
+    color: white;
+
+    margin: 0 0 0.4em 0.4em;
+
+    max-width: 160px;
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.img_overlay, .switch_img{
+    width: 180px;
+    height: 220px;
+
+    border-radius: 8px;
+}
+
+.switch_img{
+    margin-bottom: -220px;
+}
+
+.img_overlay{
+    display: flex;
+    align-items: flex-end;
+
+    background: linear-gradient(360deg, #A25E7B 7.78%, rgba(162, 94, 123, 0.783333) 15.82%, rgba(162, 94, 123, 0) 30%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');

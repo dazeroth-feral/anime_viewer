@@ -1,46 +1,46 @@
 import css from "./Rec_Blocks.module.css";
 
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import CircleBlock from "./CircleBlock/CircleBlock";
 
-const Rec_Blocks = ({props, state}) => {
+import SwitcherBlock from "./SwitcherBlock/SwitcherBlock";
+import BackgorundImg from "./BackgorundImg/BackgorundImg";
+import InformationBlock from "./InformationBlock/InformationBlock";
+import Links from "./Links/Links";
+
+// raiting, name, description, navLink_path, date_present, genre, view_type, series_length, img_path, quality ▶
+
+const Rec_Blocks = ({props, state, set_recommendation_block}) => {
+    const information_props = {
+        details_props: {
+            view_type: props.view_type,
+            series_length: props.series_length,
+            date_present: props.date_present,
+            raiting: props.raiting,
+            quality: props.quality
+        },
+        name_and_title_props: {
+            name: props.name,
+            description: props.description
+        }
+    };
+
+    const links_props = {
+        navLink_playerPage_path: props.navLink_playerPage_path,
+        navLink_detailsPage_path: props.navLink_detailsPage_path
+    };
+
     return(
         <div className={css.content}>
-            <img src={props.img_Path} className={css.anime_Image} />
-            <div className={css.image_overlay}></div> 
-
-            {/* <div className={css.anime_Raiting}>
-                {props.anime_Raiting}
-            </div> */}
-
-            <div className={css.title_and_description_anime}>
-                <div className={css.anime_Name}>
-                    {props.anime_Name}
-                </div>
-
-                <div className={css.anime_Description}>
-                    {props.anime_Description}
-                </div>
-            </div>
-
-            <div className={css.Link_and_Litle_Info}>
-                <div className={css.container_for_Link_to_Anime}>
-                    <NavLink to={props.nav_Link_Path} className={css.link_to_Anime}>Перегляд ▶</NavLink>
-                </div>
-                <div className={css.litle_Info}>
-                    <div className={css.litle_Info_date_Present}>
-                        <span className={css.gray}>{props.date_Present}</span>
-                    </div>                    
-                    <div className={css.litle_Info_anime_Type}>
-                        {props.anime_Type}
-                    </div>
-                </div>
-            </div>
+            <BackgorundImg img_path={props.big_img_path}/>
+            <InformationBlock props={information_props} />
+            <Links props={links_props} />
 
             <div className={css.convas_More_Recommendation}>
-                <CircleBlock state={state}/>
-            </div>            
+                <SwitcherBlock
+                    state={state} 
+                    set_recommendation_block={set_recommendation_block}
+                />
+            </div>
         </div>
     )
 };

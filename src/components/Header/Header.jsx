@@ -21,6 +21,22 @@ const Header = (props) => {
                 Domosid<span className={css.blue}>T</span><span className={css.yellow}>V</span>
             </NavLink>
             <div className={css.NavLinks}>
+                
+                <NavLink>
+                    Жанри
+                </NavLink>
+
+                <NavLink>
+                    Новинки
+                </NavLink>
+
+                <NavLink>
+                    Анонси
+                </NavLink>
+
+                <NavLink>
+                    Чат
+                </NavLink>
 
                 <NavLink className={css.NavLink_Search} onClick={openModal}>
                     <img src='media/icons/header_icons/search_white.svg' />

@@ -1,27 +1,69 @@
 import css from "./RecommendationBlock.module.css";
 
+import React, { useState } from "react";
+
 import Rec_Blocks from "./Rec_Blocks/Rec_Blocks";
 
-const RecommendationBlock = ({state}) => {
-    const recommendations_Object = Object.keys(state).map((key) => {
-        const { anime_Raiting, anime_Name, anime_Description, nav_Link_Path, date_Present, anime_Type, img_Path } = state[key];
-        return { anime_Raiting, anime_Name, anime_Description, nav_Link_Path, date_Present, anime_Type, img_Path };
-    });
+const RecommendationBlock = ({ state }) => {
+	const [recommendation_block_number, setRecommendation_block_number] =
+		useState(0);
 
-    let recommendations_Elements = recommendations_Object.map((recommendation) => (
-        <Rec_Blocks
-            props={recommendation}
-            state={state}
-        />
-    ))
+	const recommendations_Object = Object.keys(state).map((key) => {
+		const {
+			raiting,
 
-    console.log(recommendations_Elements)
+			name,
+			description,
 
-    return(
-        <div className={css.content}>
-            {recommendations_Elements}
-        </div>
-    )
-}
+			navLink_playerPage_path,
+			navLink_detailsPage_path,
+
+			date_present,
+			genre,
+			view_type,
+			series_length,
+			quality,
+
+			big_img_path,
+			mini_img_path,
+		} = state[key];
+
+		return {
+			raiting,
+
+			name,
+			description,
+
+			navLink_playerPage_path,
+			navLink_detailsPage_path,
+
+			date_present,
+			genre,
+			view_type,
+			series_length,
+			quality,
+
+			big_img_path,
+			mini_img_path,
+		};
+	});
+
+	let recommendations_Elements = recommendations_Object.map(
+		(recommendation, index) => (
+			<Rec_Blocks
+				key={index}
+				props={recommendation}
+				state={state}
+				set_recommendation_block={setRecommendation_block_number}
+			/>
+		)
+	);
+
+	return (
+		<div className={css.content}>
+			{recommendations_Elements[recommendation_block_number]}
+		</div>
+	);
+};
 
 export default RecommendationBlock;

@@ -1,0 +1,12 @@
+.content{
+    display: flex;
+
+    gap: 1.8em;
+    
+    /* ОПУСКАННЯ загальної інформації що вище кружечків + підняття самих КУРЖЕЧКІВ */
+    margin: -8em 35px 4em 0;
+
+    max-width: 500px;
+
+    overflow-y: auto;
+}

@@ -1,0 +1,46 @@
+.content{
+    display: flex;
+    align-items: center;
+
+    /* відступи віт назвою та описом */
+    margin: 1.5em 0;
+
+    color: white;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 14px;
+
+    min-width: 40vw;
+}
+
+.content div{
+    padding-right: 1em;
+}
+
+.content div:last-child{
+    padding: 0;
+}
+
+.content img{
+    padding-right: 2px;
+}
+
+.raiting{
+    display: flex;
+    align-items: center;
+}
+
+.quality__text{
+    color: black;
+    
+    background-color: #A25E7B;
+
+    font-size: 12px;
+
+    padding: 1px 6px 1px 6px;
+
+    border-radius: 6px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');

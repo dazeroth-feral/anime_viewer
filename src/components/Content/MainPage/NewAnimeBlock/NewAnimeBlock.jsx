@@ -8,8 +8,10 @@ const NewAnimeBlock = ({state}) => {
         return { anime_Raiting, anime_Name, anime_Description, nav_Link_Path, img_Path, anime_Type };
     });
 
-    let newAnimes_Elements = newAnimes_Object.map((newAnime) => (
+    let newAnimes_Elements = newAnimes_Object.map((newAnime, index) => (
         <NA_Blocks
+            key={index}
+
             props={newAnime}
         />
     ))

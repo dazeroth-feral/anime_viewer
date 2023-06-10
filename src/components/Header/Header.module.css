@@ -11,17 +11,25 @@
     font-family: 'Inter';
     font-style: normal;
     /* text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); */
+
+    display: flex;
+    align-items: center;
 }
 
 .NavLink_SiteName{
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 32px;
+    line-height: 39px;
 }
 
 .NavLink_Search, .NavLink_PO{
     width: 32px;
     height: 32px;
+
+    /* тіняха під значками */
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
 }
 
 .NavLinks{
@@ -30,7 +38,7 @@
 }
 
 .NavLinks > a{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 28px;
 
@@ -45,4 +53,4 @@
     color: #FFF500;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');

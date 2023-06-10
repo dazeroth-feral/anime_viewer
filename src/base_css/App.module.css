@@ -4,7 +4,7 @@
 
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 
 .main{
@@ -14,13 +14,25 @@
       /*  media  */
 
 @media screen and (max-width: 767px) {
-
+  .content{
+    padding: 0 6px;
+  }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
-
+  .content{
+    padding: 0 16px;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .content{
+    max-width: 1315px;
+  }
+}
 
+@media screen and (min-width: 1440px){
+  .content{
+    max-width: 1440px;
+  }
 }

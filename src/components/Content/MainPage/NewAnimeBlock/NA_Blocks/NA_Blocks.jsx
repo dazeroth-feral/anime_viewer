@@ -13,16 +13,16 @@ const NA_Blocks = ({props}) => {
                     </NavLink>
                     
                     <div className={css.anime_Raiting}>
-                        Рейтинг аніме: {props.anime_Raiting}
+                        <span style={{color:"white", fontSize: 16}}>Рейтинг аніме:</span> <span style={{fontSize: 18, marginRight: 16}}>{props.anime_Raiting}</span>
                     </div>
 
                     <div className={css.anime_Type}>
-                        Жанр: {props.anime_Type}
+                        <span style={{color:"white", fontSize: 16}}>Жанр:</span> <span style={{fontSize: 18,  marginRight: 16}}>{props.anime_Type}</span>
                     </div>
                 </div>
 
                 <div className={css.anime_Descroptions}>
-                    Опис: {props.anime_Description}
+                    <span style={{color:"white", fontSize: 16}}>Опис:</span> <span style={{paddingRight: 8}}>{props.anime_Description}</span>
                 </div>
             </div>
         </div>
