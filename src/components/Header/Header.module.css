@@ -5,7 +5,7 @@
     margin-top: 1.8em;
 }  
 
-.content a{
+.content a {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Inter';
@@ -44,6 +44,12 @@
 
     /* відсування іконок і елементів зправа на неадері */
     margin-left: 2em;
+}
+
+.more_search_optional{
+    margin-top: 1em;
+
+    color: rgb(0, 0, 0);
 }
 
 .blue{

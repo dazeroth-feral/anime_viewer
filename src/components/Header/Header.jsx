@@ -15,6 +15,8 @@ const Header = (props) => {
       setModalActive(false);
     };
 
+    const [input_text, set_input_text] = useState("");
+
     return(
         <div className={css.content}>
             <NavLink className={css.NavLink_SiteName} to="/">
@@ -42,13 +44,17 @@ const Header = (props) => {
                     <img src='media/icons/header_icons/search_white.svg' />
                 </NavLink>
 
-                <MyModal isActive={modalActive} close={closeModal}>
-                    <input type="text" style={{height: "auto", width: "1430px", borderRadius: "8px"}} />
-                </MyModal>
-
                 <NavLink className={css.NavLink_PO} to="/">
                     <img src='media/icons/header_icons/user_not_logged_in_white.svg' />
                 </NavLink>
+
+                <MyModal isActive={modalActive} close={closeModal}>
+                    <input value={input_text} onChange={e => set_input_text(e.target.value)} />
+                    <button><NavLink
+                        className={css.more_search_optional}
+                        to="/"   
+                    >Розширений пошук</NavLink></button>
+                </MyModal>
             </div>
         </div>
     );

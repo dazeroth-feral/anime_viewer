@@ -8,19 +8,21 @@
 
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
+}
 
+.modal.active{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .modal__content{
-    padding: 4px;
+    padding: 8px 12px;
     margin: 16px;
 
     border-radius: 12px;
-
-    width: 1440px;
-    height: 24px;
 
     background-color: white;
 }
