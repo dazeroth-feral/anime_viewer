@@ -1,7 +1,23 @@
 .content{
     display: flex;
+    flex-direction: column;
+
+    /* відступ блоку з трендами від напису */
+    gap: 1.4em;
+}
+
+.title{
+    font-size: 24px;
+    font-family: "FD_Bold";
+
+    color: #A25E7B;
+}
+
+.trends_elements{
+    display: flex;
+    flex-direction: row;
 
     gap: 20px;
-
-    overflow-y: auto;
 }
+
+@import url("../../../../base_css/fonts.css");

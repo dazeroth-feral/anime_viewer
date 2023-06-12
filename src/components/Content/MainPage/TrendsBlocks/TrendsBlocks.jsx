@@ -30,7 +30,12 @@ const TrendsBlocks = ({state}) => {
 		<Trends_Block props={trend_block} key={index}></Trends_Block>
 	));
 
-	return <div className={css.content}>{trends_elements}</div>;
+	return (
+		<div className={css.content}>
+			<div className={css.title}>Тренди:</div>
+			<div className={css.trends_elements}>{trends_elements}</div>
+		</div>
+	);
 };
 
 export default TrendsBlocks;
