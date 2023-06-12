@@ -38,10 +38,12 @@
     width: 99px;
     height: 95px;
 
-    margin: -20px -50px 0 0;
-
     background: radial-gradient(68.42% 68.42% at 78.79% 31.58%, #A25E7B 21.67%, rgba(162, 94, 123, 0.525802) 62.81%, rgba(162, 94, 123, 0) 100%);
     background-clip: content-box;
+
+    margin: -10px 0 0 0;
+
+    border-radius: 0 25% 0 0;
 }
 
 .raiting{
@@ -51,12 +53,20 @@
 
     font-size: 16px;
     font-family: "FD_Medium";
+
+    margin: -56px -96px 0 0;
+
+    z-index: 999;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .raiting_img{
     padding: 0 4px 0 0;
 
-    width: px;
+    width: 16px;
 }
 
 .bottom_container{

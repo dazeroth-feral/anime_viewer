@@ -27,11 +27,11 @@ const Trends_Block = ({props}) => {
             <img src={props.img_path} className={css.img} />
             <div className={css.img_overlay}>
                 <div className={css.top_container}>
-                    <div className={css.raiting_overlay}></div>
                     <div className={css.raiting}>
                         <img src={star_icon} className={css.raiting_img}/>
                         {props.raiting}
                     </div>
+                    <div className={css.raiting_overlay}></div>
                 </div>
                 <div className={css.bottom_container}>
                     <div className={css.card_text}>{props.name}</div>
