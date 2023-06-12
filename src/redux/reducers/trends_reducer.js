@@ -24,44 +24,6 @@ let initialState = {
 		img_path: `${SWP_PATH}/demon_slayer.jpg`,
 	},
 
-	demon_slay3er: {
-		raiting: "8.7",
-
-		name: "Клинок, що знищує демонів",
-		description:
-			"Після важкої битви з демонами, Танзіро Камадо потребує нового меча і разом зі своєю сестрою-демоном вирушає в село ковалів. Проте їх мирне життя порушує з'явлення небезпечних демонів, і вони повинні знову зіткнутися з ними, щоб вижити та покласти край демонічній загрозі, що тероризує їх країну століттями. Чи зможуть вони зберегти свої життя та перемогти цю страшну силу?",
-
-		navLink_playerPage_path: `${PLR_PG}/demon_slayer`,
-		navLink_detailsPage_path: `${DET_PG}/demon_slayer`,
-
-		date_present: "9-го квітня, 2023 року",
-		genre: "Онґоінґ",
-		view_type: "TV",
-		series_length: "24m",
-		quality: "HD",
-
-		img_path: `${SWP_PATH}/demon_slayer.jpg`,
-	},
-
-	demon_sla2yer: {
-		raiting: "8.7",
-
-		name: "Клинок, що знищує демонів",
-		description:
-			"Після важкої битви з демонами, Танзіро Камадо потребує нового меча і разом зі своєю сестрою-демоном вирушає в село ковалів. Проте їх мирне життя порушує з'явлення небезпечних демонів, і вони повинні знову зіткнутися з ними, щоб вижити та покласти край демонічній загрозі, що тероризує їх країну століттями. Чи зможуть вони зберегти свої життя та перемогти цю страшну силу?",
-
-		navLink_playerPage_path: `${PLR_PG}/demon_slayer`,
-		navLink_detailsPage_path: `${DET_PG}/demon_slayer`,
-
-		date_present: "9-го квітня, 2023 року",
-		genre: "Онґоінґ",
-		view_type: "TV",
-		series_length: "24m",
-		quality: "HD",
-
-		img_path: `${SWP_PATH}/demon_slayer.jpg`,
-	},
-
 	one_piece: {
 		raiting: "10",
 

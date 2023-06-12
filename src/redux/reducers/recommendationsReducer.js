@@ -1,8 +1,4 @@
-const PLR_PG = "player_page";
-const DET_PG = "details_page";
-
-const BP_PATH = "media/recommendation_background/big_pictures";
-const SWP_PATH = "media/recommendation_background/switcher_posters";
+import {PLR_PG, DET_PG, BP_PATH, SWP_PATH} from "../../imports/redux_imports";
 
 let initialState = {
 	demon_slayer: {

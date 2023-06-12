@@ -1,61 +1,51 @@
-.content{
-    display: flex;
-    flex-direction: row;
+.poster_img{
+    width: 253px;
+    height: 353px;
 
-    padding: 4px;
-
-    width: 49%;
-
-    border: 1px black solid;
+    border-radius: 10px;
 }
 
-.content, .content a{
-    color: white;
-}
-
-.anime_Img{
-    width: 200px;
-    height: 300px;
-}
-
-.text_Block{
-    padding-left: 1em;
-
-    /* Підняття опису відносно нижньої грані картки */
-    margin-bottom: 2em;
-
+.text_block{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-
-.NavLink_AnimePage{
-    color: black;
-    font-weight: bold;
-    margin-bottom: 2em;
-    text-decoration: none;
-
-    font-size: 28px;
-}
-
-.anime_Raiting{
-    /* Опускання до низу відносно назви та посилання на аніме */
-    padding-top: 1em;
-}
-
-.NavLink_AnimePage:hover{
-    text-decoration: underline;
-}
-
-.anime_Descroptions{
-    overflow-y: auto;
-
-    font-size: 18px;
-}
-
-.anime_Raiting, .anime_Type{
+.top_text_block{
     display: flex;
-    
     justify-content: space-between;
 }
+
+.previve_name, .previve_old_raiting{
+    margin: 8px 0 8px 0;
+}
+
+.previve_name{
+    font-size: 14px;
+}
+
+.previve_old_raiting, .previve_year_present, .previve_genre, .previve_raiting{
+    font-size: 10px;
+}
+
+.previve_name, .previve_old_raiting, .previve_year_present, .previve_genre, .previve_raiting{
+    color: white;
+
+    font-family: "FD_Bold";
+}
+
+.previve_raiting{
+    /* margin-right: 4px; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 2px;
+}
+
+.bottom_text_block{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* end previve block */

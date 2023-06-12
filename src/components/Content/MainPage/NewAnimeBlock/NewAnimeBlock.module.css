@@ -1,10 +1,26 @@
 .content{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.4em;
+
+    margin-bottom: 2em;
+}
+
+.title{
+    font-size: 24px;
+    font-family: "FD_Bold";
+
+    color: #A25E7B;;
+}
+
+.flex_block{
     min-height: 12em;
     
     display: flex;
     flex-direction: row;
 
-    gap: 4px;
+    gap: 2.65em;
     
     flex-wrap: wrap;
 
