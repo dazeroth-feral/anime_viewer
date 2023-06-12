@@ -21,8 +21,7 @@ let initialState = {
 		series_length: "24m",
 		quality: "HD",
 
-		big_img_path: `${BP_PATH}/demon_slayer.png`,
-		mini_img_path: `${SWP_PATH}/demon_slayer.jpg`,
+		img_path: `${SWP_PATH}/demon_slayer.jpg`,
 	},
 
 	one_piece: {
@@ -41,8 +40,7 @@ let initialState = {
 		series_length: "24m",
 		quality: "HD",
 
-		big_img_path: `${BP_PATH}/one_piece.jpg`,
-		mini_img_path: `${SWP_PATH}/one_piece.jpg`,
+		img_path: `${SWP_PATH}/one_piece.jpg`,
 	},
 
     black_clover: {
@@ -61,17 +59,16 @@ let initialState = {
 		series_length: "24m",
 		quality: "HD",
 
-		big_img_path: `${BP_PATH}/black_clover.png`,
-		mini_img_path: `${SWP_PATH}/black_clover.jpg`,
+		img_path: `${SWP_PATH}/black_clover.jpg`,
 	},
 	
 };
 
-const recommendationsReducer = (store = initialState, action) => {
+const trends_reducer = (store = initialState, action) => {
 	switch (action.type) {
 		default:
 			return store;
 	}
 };
 
-export default recommendationsReducer;
+export default trends_reducer;
