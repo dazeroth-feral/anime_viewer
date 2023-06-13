@@ -1,0 +1,35 @@
+.nav_link_search{
+    margin-left: 1.4em;
+
+    display: flex;
+    align-items: center;
+
+    width: 32px;
+    height: 32px;
+
+    /* тіняха під значками */
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
+}
+
+.my_modal_content{
+    display: flex;
+    flex-direction: column;
+
+    /* відступ елементів (input & button) */
+    gap: 0.4em;
+}
+
+.search_input{
+    min-width: 600px;
+}
+
+.more_search_optional_block{
+    display: flex;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.more_search_optional_link{
+    color: black;
+    text-decoration: none;
+}

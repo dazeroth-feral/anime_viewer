@@ -5,7 +5,7 @@
     margin-top: 1.8em;
 }  
 
-.content a {
+.nav_link_site_name, .genre_link, .news_link, .announcements_link, .chat_link, .nav_link_personal_cabinet{
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'FD_Medium';
@@ -15,14 +15,14 @@
     align-items: center;
 }
 
-.NavLink_SiteName{
+.nav_link_site_name{
     font-family: 'FD_Bold';
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
 }
 
-.NavLink_Search, .NavLink_PO{
+.nav_link_personal_cabinet{
     width: 32px;
     height: 32px;
 
@@ -30,12 +30,12 @@
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 1));
 }
 
-.NavLinks{
+.nav_links_block{
     display: flex;
     align-items: center;
 }
 
-.NavLinks > a{
+.nav_links_block > a{
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;

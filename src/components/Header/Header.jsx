@@ -2,59 +2,37 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import css from "./Header.module.css"
-import MyModal from '../MyModal/MyModal';
+import Search from './Search/Search';
 
 const Header = (props) => {
-    const [modalActive, setModalActive] = useState(false);
-
-    const openModal = () => {
-      setModalActive(true);
-    };
-  
-    const closeModal = () => {
-      setModalActive(false);
-    };
-
-    const [input_text, set_input_text] = useState("");
-
     return(
         <div className={css.content}>
-            <NavLink className={css.NavLink_SiteName} to="/">
+            <NavLink className={css.nav_link_site_name} to="/">
                 Domosid<span className={css.blue}>T</span><span className={css.yellow}>V</span>
             </NavLink>
-            <div className={css.NavLinks}>
+            <div className={css.nav_links_block}>
                 
-                <NavLink>
+                <NavLink className={css.genre_link}>
                     Жанри
                 </NavLink>
 
-                <NavLink>
+                <NavLink className={css.news_link}>
                     Новинки
                 </NavLink>
 
-                <NavLink>
+                <NavLink className={css.announcements_link}>
                     Анонси
                 </NavLink>
 
-                <NavLink>
+                <NavLink className={css.chat_link}>
                     Чат
                 </NavLink>
 
-                <NavLink className={css.NavLink_Search} onClick={openModal}>
-                    <img src='media/icons/header_icons/search_white.svg' />
-                </NavLink>
-
-                <NavLink className={css.NavLink_PO} to="/">
+                <NavLink className={css.nav_link_personal_cabinet} to="/">
                     <img src='media/icons/header_icons/user_not_logged_in_white.svg' />
                 </NavLink>
 
-                <MyModal isActive={modalActive} close={closeModal}>
-                    <input value={input_text} onChange={e => set_input_text(e.target.value)} />
-                    <button><NavLink
-                        className={css.more_search_optional}
-                        to="/"   
-                    >Розширений пошук</NavLink></button>
-                </MyModal>
+                <Search />
             </div>
         </div>
     );
