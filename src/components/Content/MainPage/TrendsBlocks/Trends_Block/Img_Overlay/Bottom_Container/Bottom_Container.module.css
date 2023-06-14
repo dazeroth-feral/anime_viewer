@@ -1,0 +1,52 @@
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card_text{
+    margin: 0 0 16px 16px;
+
+    font-family: "FD_Medium";
+    font-size: 22px;
+    color: white;
+
+    max-width: 233px;
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.button_container{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 16px 16px 0
+}
+
+.button_play{
+    width: 24px;
+    height: 24px;
+}
+
+.button_like,.button_like.active{
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.button_like{
+    width: 24px;
+    height: 24px;
+
+    stroke: white;
+    fill: none;
+
+    padding: 0 0 8px 0;
+}
+
+.button_like.active{
+    stroke: gold;
+    fill: gold;
+}
