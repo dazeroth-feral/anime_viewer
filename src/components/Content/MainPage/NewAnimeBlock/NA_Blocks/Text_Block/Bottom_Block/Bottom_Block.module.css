@@ -1,0 +1,41 @@
+.poster_img{
+    width: 253px;
+    height: 353px;
+
+    border-radius: 10px;
+}
+
+.previve_name, .previve_old_raiting{
+    margin: 8px 0 8px 0;
+}
+
+.previve_name{
+    font-size: 14px;
+}
+
+.previve_old_raiting, .previve_year_present, .previve_genre, .previve_raiting{
+    font-size: 10px;
+}
+
+.previve_name, .previve_old_raiting, .previve_year_present, .previve_genre, .previve_raiting{
+    color: white;
+
+    font-family: "FD_Bold";
+}
+
+.previve_raiting{
+    /* margin-right: 4px; */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 2px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* end previve block */
