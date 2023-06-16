@@ -1,0 +1,17 @@
+.tooltip_container{
+    background: gray;
+}
+
+.element{
+    background: gray;
+}
+
+.tooltip_content{
+    position: absolute;
+}
+
+/* КУРВА НЕ ГЕНЕРУЄТЬСЯ АВТОМАТИЧНО */
+
+.tooltip {
+
+}

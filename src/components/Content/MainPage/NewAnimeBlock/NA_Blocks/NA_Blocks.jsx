@@ -1,30 +1,19 @@
+import React from "react";
+
 import css from "./NA_Blocks.module.css";
-import { NavLink } from 'react-router-dom';
+
+import Img_Block from "./Img_Block/Img_Block";
 import Text_Block from "./Text_Block/Text_Block";
-
-// name,
-// description,
-
-// raiting,
-// old_raiting,
-// genre,
-// translate_type,
-// date_present,
-// year_present,
-// series_count,
-// voise_dub_count,
-// view_type,
-// quality,
-
-// nav_link_path,
-
-// img_path,
+import On_Hover_Window from "./On_Hover_Window/On_Hover_Window";
 
 const NA_Blocks = ({props}) => {
+    
+
     return(
         <div className={css.content}>
-            <img className={css.poster_img} src={props.img_path} alt="img" />
+            <Img_Block props={props}/>
             <Text_Block props={props} />
+            {/* <On_Hover_Window /> */}
         </div>
     )
 };
