@@ -1,7 +1,9 @@
-.content{
+.content, .hover_block{
     width: 253px;
     height: 353px;
+}
 
+.content{
     margin-top: -353px;
 
     border-radius: 10px;
@@ -13,4 +15,31 @@
     justify-content: space-between;
 
     background: linear-gradient(360deg, #A25E7B 7.78%, rgba(162, 94, 123, 0.783333) 15.82%, rgba(162, 94, 123, 0) 30%);
+}
+
+.hover_block, .play_circle{
+    position: absolute;
+
+    visibility: hidden;
+}
+
+.hover_block.active, .play_circle.active{
+    visibility: visible;
+}
+
+.hover_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover_block.active{
+    background: radial-gradient(116.62% 65.3% at 50% 42.63%, rgba(162, 94, 123, 0.7) 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.play_circle{
+    width: 36px;
+    height: 36px;
+}
+.play_circle.active{
+
 }

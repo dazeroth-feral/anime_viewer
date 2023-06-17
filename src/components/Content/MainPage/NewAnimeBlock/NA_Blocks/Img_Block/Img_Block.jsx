@@ -94,15 +94,13 @@ const NA_Blocks = ({props}) => {
                     </NavLink>
                 </div>
             </div>
-            <div 
+            <NavLink 
                 className={visibily_image_overlay}
                 onMouseOver={() => mouse_hover(true)}
                 onMouseLeave={() => mouse_hover(false)}
-            >
-                <NavLink to={props.nav_link_path}>
-                    <img className={play_circle} src={play_circle_black} />
-                </NavLink>
-            </div>
+                to={props.nav_link_path}>
+                <img className={play_circle} src={play_circle_black} />
+            </NavLink>
             <img className={css.poster_img} src={props.img_path}/>
         </div>
     )

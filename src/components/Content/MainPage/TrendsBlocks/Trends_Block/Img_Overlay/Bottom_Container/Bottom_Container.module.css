@@ -43,7 +43,8 @@
     stroke: white;
     fill: none;
 
-    padding: 0 0 8px 0;
+    /* підняття лайку відносно нижньої границі */
+    padding: 0 0 4px 0;
 }
 
 .button_like.active{
