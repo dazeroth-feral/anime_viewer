@@ -2,23 +2,15 @@ import React, { useState } from "react";
 
 import css from "./Hover_block.module.css";
 
-const Hover_block = ({ props, set_visible }) => {
-	const hover_block_active = [css.content, css.active].join(" ");
+import { NavLink } from "react-router-dom";
 
-	const show_hover_block = (bool) => {
-		switch(bool){
-			case true:
-				set_visible(hover_block_active);
-				break;
-			case false:
-				set_visible(css.content)
-		};
-	};
+const play_circle_black = "media/icons/play_circle_black.svg";
 
+const Hover_block = ({ props, hover_block_style, play_circle }) => {
 	return (
-		<div className={css.content}>
-			
-		</div>
+		<NavLink to={props.navLink_playerPage_path} className={hover_block_style}>
+			<img className={play_circle} src={play_circle_black} />
+		</NavLink>
 	);
 };
 
