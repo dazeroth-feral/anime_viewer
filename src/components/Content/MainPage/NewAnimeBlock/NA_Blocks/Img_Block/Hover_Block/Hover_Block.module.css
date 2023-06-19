@@ -136,47 +136,6 @@
 	font-family: "FD_Regular";
 }
 
-.poster_img,
-.image_overlay {
-	width: 253px;
-	height: 353px;
-
-	border-radius: 10px;
-}
-
-.poster_img {
-	z-index: 997;
-}
-
-.image_overlay {
-	margin-bottom: -353px;
-
-	z-index: 998;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.play_circle_img {
-	width: 36px;
-	height: 36px;
-
-	visibility: hidden;
-}
-.play_circle_img.active {
-	visibility: visible;
-}
-.image_overlay.active {
-	visibility: visible;
-
-	background: radial-gradient(
-		116.62% 65.3% at 50% 42.63%,
-		rgba(162, 94, 123, 0.7) 0%,
-		rgba(217, 217, 217, 0) 100%
-	);
-	/* filter: blur(2px); */
-}
-
 .bottom_block {
 	display: flex;
 	flex-direction: row;
