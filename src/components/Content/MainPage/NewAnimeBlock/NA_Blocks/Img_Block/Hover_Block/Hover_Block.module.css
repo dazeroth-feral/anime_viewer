@@ -1,0 +1,209 @@
+.name {
+	font-size: 16px;
+	font-family: "FD_Bold";
+}
+
+.translate_type {
+	position: absolute;
+
+	top: 0em;
+	right: 0em;
+
+	font-size: 12px;
+	font-family: "FD_Bold";
+
+	padding: 0 10px 0 10px;
+
+	border-radius: 0 10px 0 10px;
+}
+.translate_type.gold {
+	background-color: #d0d338;
+
+	padding: -1em -1em 0 0;
+}
+.translate_type.purple {
+	background-color: #9838d3;
+
+	padding: -1em -1em 0 0;
+}
+.translate_type.green {
+	background-color: #38d33e;
+
+	padding: -1em -1em 0 0;
+}
+.translate_type.red {
+	background-color: #d33838;
+
+	padding: -1em -1em 0 0;
+}
+
+.left_block {
+	display: flex;
+	gap: 16px;
+}
+
+.information_block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.raiting {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+
+	font-size: 16px;
+	font-family: "FD_Light";
+}
+.counters_block {
+	display: flex;
+	align-items: center;
+	gap: 1px;
+}
+.series_counter_block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 4px;
+
+	background-color: #b4b648;
+
+	border-radius: 8px 0 0 8px;
+
+	padding: 1.5px 4px 1.5px 6px;
+}
+.series_counter {
+	font-size: 10px;
+	font-family: "FD_Medium";
+}
+
+.voice_dub_count_block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2px;
+
+	background-color: #5e92a2;
+
+	padding: 1.5px 4px;
+}
+.voice_dub_count {
+	font-size: 10px;
+	font-family: "FD_Medium";
+}
+
+.quality,
+.view_type {
+	font-size: 12px;
+	font-family: "FD_Medium";
+}
+.quality {
+	background-color: #a25e7b;
+
+	padding: 0 4px;
+}
+.view_type {
+	background-color: #5ea265;
+
+	padding: 0 6px 0 4px;
+
+	border-radius: 0 8px 8px 0;
+}
+
+.old_raiting {
+	font-size: 12px;
+	font-family: "FD_Regular";
+	background-color: black;
+	padding: 0px 8px;
+
+	border-radius: 10px;
+
+	display: flex;
+	align-items: center;
+	align-self: flex-end;
+}
+
+.series_counter,
+.voice_dub_count,
+.quality,
+.view_type {
+	color: black;
+}
+
+.description {
+	font-size: 14px;
+	font-family: "FD_Regular";
+}
+
+.poster_img,
+.image_overlay {
+	width: 253px;
+	height: 353px;
+
+	border-radius: 10px;
+}
+
+.poster_img {
+	z-index: 997;
+}
+
+.image_overlay {
+	margin-bottom: -353px;
+
+	z-index: 998;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.play_circle_img {
+	width: 36px;
+	height: 36px;
+
+	visibility: hidden;
+}
+.play_circle_img.active {
+	visibility: visible;
+}
+.image_overlay.active {
+	visibility: visible;
+
+	background: radial-gradient(
+		116.62% 65.3% at 50% 42.63%,
+		rgba(162, 94, 123, 0.7) 0%,
+		rgba(217, 217, 217, 0) 100%
+	);
+	/* filter: blur(2px); */
+}
+
+.bottom_block {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.genre,
+.date_present,
+.series_length {
+	font-size: 10px;
+	font-family: "FD_Medium";
+}
+.trailer_link {
+	color: black;
+	text-decoration: none;
+
+	font-size: 12px;
+	font-family: "FD_Regular";
+
+	display: flex;
+	align-items: center;
+
+	/* відстань зображення "плей" від напису "трейлер" */
+	gap: 4px;
+
+	background-color: #a25e7b;
+
+	margin-top: -2px;
+	padding: 0px 16px 2px 16px;
+	border-radius: 50px;
+}
