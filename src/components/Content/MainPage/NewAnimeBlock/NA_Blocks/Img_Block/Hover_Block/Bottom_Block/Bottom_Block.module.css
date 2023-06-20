@@ -1,0 +1,30 @@
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.genre,
+.date_present,
+.series_length {
+	font-size: 10px;
+	font-family: "FD_Medium";
+}
+.trailer_link {
+	color: black;
+	text-decoration: none;
+
+	font-size: 12px;
+	font-family: "FD_Regular";
+
+	display: flex;
+	align-items: center;
+
+	/* відстань зображення "плей" від напису "трейлер" */
+	gap: 4px;
+
+	background-color: #a25e7b;
+
+	margin-top: -2px;
+	padding: 0px 16px 2px 16px;
+	border-radius: 50px;
+}
