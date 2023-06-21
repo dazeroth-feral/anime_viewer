@@ -4,7 +4,7 @@
 }
 
 .content{
-    margin-top: -353px;
+    position: absolute;
 
     border-radius: 10px;
 

@@ -20,8 +20,6 @@
     flex-direction: row;
 
     gap: 2.65em;
-
-    overflow-y: auto
 }
 
 @import url("../../../../base_css/fonts.css");
