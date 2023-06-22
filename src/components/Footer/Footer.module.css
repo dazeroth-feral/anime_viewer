@@ -1,16 +1,81 @@
-.content {
-    display: flex;
-    align-items: center;
+.content{
+    height: 200px;
+}
 
-    background-color: #30363d;
-    border-radius: 10px 10px 0 0;
+.gradient_line{
+    background: linear-gradient(90deg, #FFE500 0.31%, #00C2FF 100%);
+
+    height: 2px;
+    /* width: 100vw; */
+}
+
+.blocks{
+    display: flex;
+}
+
+/* left block */
+.blocks > .left_block{
+    display: flex;
+}
+
+/* фоточка тянки */
+.blocks > .left_block > .left_block{
+    margin-right: -100px;
+}
+
+/* текст про підтримку ЗСУ */
+.blocks > .left_block > .right_block > .top_block{
+    font-size: 32px;
+    font-family: "FD_Bold";
+
+    width: 365px;
+
+    color: #ffcd11;
+}
+
+/* контейнер написів до підтримки ЗСУ */
+.blocks > .left_block > .right_block > .bottom_block{
+    display: flex;
+}
+
+/* стиль кнопки на посилання для підтримки ЗСУ */
+.blocks > .left_block > .right_block > .bottom_block > .left_block{
+    font-size: 16px;
+    font-family: "FD_Medium";
+    text-decoration: none;
+
     color: white;
 
-    padding: 1em;
+    padding: 6px 20px;
 
-    border-radius: 0 0 2em 2em;
-
-    border-radius: 2em 2em 0em 0em;
-
-    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px;
+    border-image: linear-gradient(90deg, #0029FF 35%, #FFF500 55%, #FFF500 100%);
+    border-image-slice: 1;
 }
+
+/* опис до тексту підтримки ЗСУ */
+.blocks > .left_block > .right_block > .bottom_block > .right_block{
+    font-size: 13px;
+    font-family: "FD_Medium";
+
+    width: 248px;
+
+    color: #8C8C8C;
+}
+
+/* central block */
+.blocks > .center_block{
+    color: #E1E1E1;
+
+    font-size: 14px;
+    font-family: "FD_Medium";
+
+    width: 567px;
+}
+
+/* right block */
+.blocks > .right_block{
+    font-size: 32px;
+    font-family: "FD_Bold";
+}
+  

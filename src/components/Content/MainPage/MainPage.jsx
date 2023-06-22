@@ -6,12 +6,12 @@ import RecommendationBlock from './RecommendationBlock/RecommendationBlock';
 import NewAnimeBlock from "./NewAnimeBlock/NewAnimeBlock";
 import TrendsBlocks from './TrendsBlocks/TrendsBlocks';
 
-const MainPage = (props) => {
+const MainPage = ({state}) => {
     return(
         <div>
-            <RecommendationBlock state={props.state.recommendation_List} />
-            <TrendsBlocks state={props.state.trends_list} />
-            <NewAnimeBlock state={props.state.new_Animes_List} />
+            <RecommendationBlock state={state.recommendation_List} />
+            <TrendsBlocks state={state.trends_list} />
+            <NewAnimeBlock state={state.new_Animes_List} />
         </div>
     );
 };

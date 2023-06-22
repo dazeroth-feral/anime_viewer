@@ -10,13 +10,13 @@ import RoutesBlock from "./components/Routes/RoutesBlock";
 function App({ state }) {
 	return (
 		<div className={css.content}>
-			<Header className={css.Header} />
+			<Header />
 
 			<main className={css.main}>
 				<RoutesBlock state={state} />
 			</main>
 
-  		<Footer className={css.Footer} />
+  		<Footer state={state.footer_list} />
 		</div>
 	);
 }
