@@ -6,11 +6,17 @@
     background: linear-gradient(90deg, #FFE500 0.31%, #00C2FF 100%);
 
     height: 2px;
-    /* width: 100vw; */
+    width: 100vw;
+
+    position: absolute;
+    left: 0;
+
+    margin: 0;
 }
 
 .blocks{
     display: flex;
+    justify-content: space-between;
 }
 
 /* left block */
@@ -46,11 +52,31 @@
 
     color: white;
 
-    padding: 6px 20px;
+    margin-top: -6px;
+}
 
-    border: solid 2px;
-    border-image: linear-gradient(90deg, #0029FF 35%, #FFF500 55%, #FFF500 100%);
-    border-image-slice: 1;
+.support_button_text{
+    display: block;
+    margin: -34px 0 0 16px;
+}
+
+/* контейнер каписів про підтримку ЗСУ */
+.blocks > .left_block > .right_block{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 32px;
+
+    margin-top: -12px;
+}
+
+.blocks > .left_block > .right_block > .bottom_block{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: -16px;
 }
 
 /* опис до тексту підтримки ЗСУ */
@@ -64,18 +90,30 @@
 }
 
 /* central block */
-.blocks > .center_block{
+/* .blocks > .center_block{
     color: #E1E1E1;
 
     font-size: 14px;
     font-family: "FD_Medium";
 
     width: 567px;
-}
+} */
 
 /* right block */
 .blocks > .right_block{
     font-size: 32px;
     font-family: "FD_Bold";
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    justify-content: center;
+
+    margin-top: -4px;
 }
   
+.contacts{
+    display: flex;
+    gap: 30px;
+}
