@@ -101,19 +101,72 @@
 
 /* right block */
 .blocks > .right_block{
-    font-size: 32px;
-    font-family: "FD_Bold";
-
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    flex-direction: row;
+    /* відступ палки від назви сайту */
+    gap: 24px;
 
-    justify-content: center;
+    align-items: center;
 
     margin-top: -4px;
+}
+
+.site_description{
+    display: flex;
+    flex-direction: row;
+    /* відступ палки від опису сайту */
+    gap: 24px;
+
+    margin-top: -8px;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+.site_description.active{
+    opacity: 1;
+}
+
+.text_block{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-size: 18px;
+    font-family: "FD_Bold";
+
+    color: white;
+
+    align-self: flex-end;
+
+    /* опусшення опису відносно назви */
+    margin-bottom: 8px;
+}
+.description{
+    font-size: 14px;
+    font-family: "FD_Medium";
+    text-align: right;
+
+    color: #A5A5A5;
+
+    width: 448px;
+}
+
+.blocks > .right_block > .links_block{
+    font-size: 32px;
+    font-family: "FD_Bold";
 }
   
 .contacts{
     display: flex;
     gap: 30px;
+}
+
+.h_top{
+    width: 1px;
+    height: 108px;
+
+    background-color: white;
+
+    position: relative;
 }
