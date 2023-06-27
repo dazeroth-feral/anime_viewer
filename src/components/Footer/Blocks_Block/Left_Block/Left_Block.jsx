@@ -17,7 +17,11 @@ const Left_Block = ({ state }) => {
                     <div>Збройні Сили Україні</div>
                 </div>
                 <div className={css.bottom_block}>
-                    <NavLink className={css.button_block} to={state.donate}>
+                    <NavLink 
+                        className={css.button_block} 
+                        to={state.nav_links.donate}
+                        target='_blank'
+                    >
                         <img src={UK_BUTTON_IMG} />
                         <span className={css.support_button_text}>Підтримати</span>
                     </NavLink>

@@ -9,7 +9,7 @@ const Links_Block = ({ state }) => {
 
     return (
             <div className={css.content}>
-                <NavLink className={css.site_name} to={state.site_main_page_link}>
+                <NavLink className={css.site_name} to={state.nav_links.site_main_page_link}>
                     <span style={{ color: "white" }}>Domosid</span>
                     <span style={{ color: "#0094FF" }}>T</span>
                     <span style={{ color: "#FFF500" }}>V</span>

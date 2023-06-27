@@ -14,16 +14,16 @@ const Contacts_Block = ({ state }) => {
     return (
 
         <div className={css.content}>
-            <NavLink className={css.tiktok} to={state.tiktok_link}>
+            <NavLink className={css.tiktok} to={state.nav_links.tiktok_link}>
                 <img src={TIKTOK_IMG} />
             </NavLink>
-            <NavLink className={css.discord} to={state.discord_link}>
+            <NavLink className={css.discord} to={state.nav_links.discord_link}>
                 <img src={DISCORD_IMG} />
             </NavLink>
-            <NavLink className={css.telegram} to={state.telegram_link}>
+            <NavLink className={css.telegram} to={state.nav_links.telegram_link}>
                 <img src={TELEGRAM_IMG} />
             </NavLink>
-            <NavLink className={css.instagram} to={state.instagram_link}>
+            <NavLink className={css.instagram} to={state.nav_links.instagram_link}>
                 <img src={INSTAGRAM_IMG} />
             </NavLink>
         </div>
