@@ -1,0 +1,28 @@
+/* right block */
+.content{
+    display: flex;
+    flex-direction: row;
+    /* відступ палки від назви сайту */
+    gap: 24px;
+
+    align-items: center;
+
+    margin-top: -4px;
+}
+
+/* назва сайту, що є посиланням на нього */
+.site_name{
+    text-decoration: none;
+}
+
+/* загальний блок з посиланнями */
+.links_block{
+    font-size: 32px;
+    font-family: "FD_Bold";
+}
+
+/* всі посилання на соц. мережі сайту */
+.contacts{
+    display: flex;
+    gap: 30px;
+}

@@ -1,0 +1,56 @@
+/* блок з описом сайту, котрий з'являється при наведенні на футер */
+.site_description {
+    display: flex;
+    flex-direction: row;
+    /* відступ палки від опису сайту */
+    gap: 24px;
+
+    margin-top: -8px;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.site_description.active {
+    opacity: 1;
+}
+
+/* блок з текстами в середині блоку опису */
+.text_block {
+    display: flex;
+    flex-direction: column;
+}
+
+/* верхній напис опису */
+.label {
+    font-size: 18px;
+    font-family: "FD_Bold";
+
+    color: white;
+
+    align-self: flex-end;
+
+    /* опусшення опису відносно назви */
+    margin-bottom: 8px;
+}
+
+/* нижній напис опису */
+.description {
+    font-size: 14px;
+    font-family: "FD_Medium";
+    text-align: right;
+
+    color: #A5A5A5;
+
+    width: 448px;
+}
+
+/* ліная, що межею між описом та блоком посилань */
+.h_top {
+    width: 1px;
+    height: 108px;
+
+    background-color: white;
+
+    position: relative;
+}

@@ -1,0 +1,10 @@
+/* загальний блок з посиланнями */
+.content{
+    font-size: 32px;
+    font-family: "FD_Bold";
+}
+
+/* назва сайту, що є посиланням на нього */
+.site_name{
+    text-decoration: none;
+}

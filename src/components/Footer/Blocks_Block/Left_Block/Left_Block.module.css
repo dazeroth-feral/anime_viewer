@@ -1,0 +1,69 @@
+/* left block */
+.content{
+    display: flex;
+}
+
+/* фоточка тянки */
+.img_block{
+    margin-right: -100px;
+}
+
+/* контейнер каписів про підтримку ЗСУ */
+.text_block{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 32px;
+
+    margin-top: -12px;
+}
+
+/* текст про підтримку ЗСУ */
+.top_block{
+    font-size: 32px;
+    font-family: "FD_Bold";
+
+    width: 365px;
+
+    color: #ffcd11;
+}
+
+/* контейнер написів до підтримки ЗСУ */
+.bottom_block{
+    display: flex;
+}
+
+/* стиль кнопки на посилання для підтримки ЗСУ */
+.button_block{
+    font-size: 16px;
+    font-family: "FD_Medium";
+    text-decoration: none;
+
+    color: white;
+
+    margin-top: -6px;
+}
+
+.support_button_text{
+    display: block;
+    margin: -34px 0 0 16px;
+}
+
+.bottom_block{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: -16px;
+}
+
+/* опис до тексту підтримки ЗСУ */
+.description{
+    font-size: 13px;
+    font-family: "FD_Medium";
+
+    width: 248px;
+
+    color: #8C8C8C;
+}
