@@ -49,7 +49,7 @@ const NewAnimeBlock = ({ state }) => {
 	});
 
 	let newAnimes_Elements = newAnimes_Object.map((newAnime, index) => (
-		<NA_Blocks key={index} props={newAnime} />
+		<NA_Blocks key={index} props={newAnime} index={index} />
 	));
 
 	return (

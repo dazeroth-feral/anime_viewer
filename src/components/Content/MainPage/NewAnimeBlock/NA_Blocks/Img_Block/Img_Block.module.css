@@ -1,6 +1,8 @@
 .content {
 	display: flex;
 	flex-direction: column;
+
+	position: relative;
 }
 
 .poster_img,
@@ -44,6 +46,7 @@
 }
 .hover_block {
 	position: absolute;
+	left: -10%;
 
 	margin: -140px 0 0 180px;
 	padding: 1em;
@@ -57,7 +60,7 @@
 
 	border-radius: 10px;
 
-	max-width: 554px;
+	width: 554px;
 
 	display: flex;
 	flex-direction: column;
@@ -67,4 +70,8 @@
 }
 .hover_block.active {
 	visibility: visible;
+}
+
+.hover_block.hover_block_lefted {
+	left: -321px; /* або інше значення відсотків */
 }
