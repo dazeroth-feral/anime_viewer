@@ -30,14 +30,13 @@
 	width: 36px;
 	height: 36px;
 
-	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.5s;
 }
 .play_circle_img.active {
-	visibility: visible;
+	transform: scale(1);
 }
 .image_overlay.active {
-	visibility: visible;
-
 	background: radial-gradient(
 		116.62% 65.3% at 50% 42.63%,
 		rgba(162, 94, 123, 0.7) 0%,

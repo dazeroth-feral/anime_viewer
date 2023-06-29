@@ -19,12 +19,14 @@
 
 .hover_block, .play_circle{
     position: absolute;
-
-    visibility: hidden;
+}
+.play_circle{
+    transform: scale(0);
+    transition: transform 0.5s;
 }
 
 .hover_block.active, .play_circle.active{
-    visibility: visible;
+    transform: scale(1);
 }
 
 .hover_block{
