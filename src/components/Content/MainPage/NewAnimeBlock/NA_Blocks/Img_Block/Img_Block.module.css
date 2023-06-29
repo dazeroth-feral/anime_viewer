@@ -48,12 +48,10 @@
 	position: absolute;
 	left: -10%;
 
-	margin: -140px 0 0 180px;
+	margin: -130px 0 0 -140px;
 	padding: 1em;
 
 	z-index: 999;
-
-	visibility: hidden;
 
 	background-color: #2e303e;
 	color: white;
@@ -67,11 +65,10 @@
 
 	/* відстань між блоками в середині вспливаючого віконця */
 	gap: 24px;
+
+	transform: scale(0);
+	transition: transform 0.5s;
 }
 .hover_block.active {
-	visibility: visible;
-}
-
-.hover_block.hover_block_lefted {
-	left: -321px; /* або інше значення відсотків */
+	transform: scale(1);
 }

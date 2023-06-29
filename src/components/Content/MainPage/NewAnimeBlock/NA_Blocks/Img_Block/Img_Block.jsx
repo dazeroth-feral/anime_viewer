@@ -4,7 +4,7 @@ import css from "./Img_Block.module.css";
 import Hover_Block from "./Hover_Block/Hover_Block";
 import Hover_NavLink from "./Hover_NavLink/Hover_NavLink";
 
-const Img_Block = ({ props, index }) => {
+const Img_Block = ({ props }) => {
 	const [play_circle, set_play_circle] = useState(css.play_circle_img);
 	const [visibily_image_overlay, set_visibily_image_overlay] = useState(
 		css.image_overlay
@@ -35,7 +35,6 @@ const Img_Block = ({ props, index }) => {
 		play_circle: play_circle,
 		visibily_image_overlay: visibily_image_overlay,
 		hover_block: hover_block,
-		hover_block_lefted: css.hover_block_lefted,
 	};
 
 	return (
@@ -44,7 +43,7 @@ const Img_Block = ({ props, index }) => {
 			onMouseLeave={() => mouse_hover(false)}
 			className={css.content}
 		>
-			<Hover_Block props={props} style_props={style_props} index={index} />
+			<Hover_Block props={props} style_props={style_props}/>
 			<Hover_NavLink style_props={style_props} props={props} />
 			<img className={css.poster_img} src={props.img_path} />
 		</div>
