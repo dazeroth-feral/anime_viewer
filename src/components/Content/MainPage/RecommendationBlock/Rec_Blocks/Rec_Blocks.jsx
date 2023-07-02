@@ -1,15 +1,15 @@
 import css from "./Rec_Blocks.module.css";
 
-import React from 'react';
+import React, { useState } from 'react';
 
 import SwitcherBlock from "./SwitcherBlock/SwitcherBlock";
 import BackgorundImg from "./BackgorundImg/BackgorundImg";
 import InformationBlock from "./InformationBlock/InformationBlock";
 import Links from "./Links/Links";
 
-// raiting, name, description, navLink_path, date_present, genre, view_type, series_length, img_path, quality ▶
+// .recommendation_background_image .switch_animation
 
-const Rec_Blocks = ({props, state, set_recommendation_block}) => {
+const Rec_Blocks = ({props, background_image_style, info_blocks_style, state, change_content}) => {
     const information_props = {
         details_props: {
             view_type: props.view_type,
@@ -31,14 +31,14 @@ const Rec_Blocks = ({props, state, set_recommendation_block}) => {
 
     return(
         <div className={css.content}>
-            <BackgorundImg img_path={props.big_img_path}/>
-            <InformationBlock props={information_props} />
-            <Links props={links_props} />
+            <BackgorundImg img_path={props.big_img_path} background_image_style={background_image_style} />
+            <InformationBlock props={information_props} info_blocks_style={info_blocks_style} />
+            <Links props={links_props} info_blocks_style={info_blocks_style} />
 
             <div className={css.convas_More_Recommendation}>
                 <SwitcherBlock
                     state={state} 
-                    set_recommendation_block={set_recommendation_block}
+                    change_content={change_content}
                 />
             </div>
         </div>

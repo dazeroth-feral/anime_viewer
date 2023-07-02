@@ -4,18 +4,20 @@ import React from 'react';
 
 import Details from "./Details/Details";
 
-const InformationBlock = ({props}) => {
+const InformationBlock = ({props, info_blocks_style}) => {
     return(
-        <div className={css.content}>
-            <div className={css.anime_Name}>
-                {props.name_and_title_props.name}
+        <div className={info_blocks_style}>
+            <div className={css.content}>
+                <div className={css.name}>
+                    {props.name_and_title_props.name}
+                </div>
+
+                <Details props={props.details_props} />
+
+                <div className={css.description}>
+                    {props.name_and_title_props.description}
+                </div> 
             </div>
-
-            <Details props={props.details_props} />
-
-            <div className={css.anime_Description}>
-                {props.name_and_title_props.description}
-            </div>      
         </div>
     )
 };

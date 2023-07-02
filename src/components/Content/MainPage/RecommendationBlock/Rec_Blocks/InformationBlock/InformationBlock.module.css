@@ -1,9 +1,9 @@
 .content{
     /* Це в нас ПІДНЯТТЯ назви та опису відносно кнопок */
-    margin-bottom: 0.5em;
+    margin-bottom: 32px;
 }
 
-.anime_Name{
+.name{
     font-family: 'FD_Black';
     font-size: 36px;
 
@@ -14,7 +14,7 @@
     text-transform: uppercase;
 }
 
-.anime_Description{
+.description{
     font-family: 'FD_Regular';
     font-style: normal;
     font-weight: 400;
@@ -24,5 +24,3 @@
 
     max-width: 40vw;
 }
-
-@import url("../../../../../../base_css/fonts.css");

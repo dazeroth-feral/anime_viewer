@@ -2,10 +2,9 @@ import React from "react";
 
 import css from "./Switch_Block.module.css";
 
-const Switch_Block = ({props, set_recommendation_block, block_number}) => {
-    const handle_click = (event) => {
-        event.stopPropagation();
-        set_recommendation_block(block_number)
+const Switch_Block = ({props, change_content, block_number}) => {
+    const handle_click = () => {
+        change_content(block_number);
     };
     
     return(

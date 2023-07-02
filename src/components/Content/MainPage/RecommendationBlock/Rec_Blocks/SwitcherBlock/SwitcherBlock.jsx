@@ -3,7 +3,7 @@ import React from "react";
 import css from "./SwitcherBlock.module.css";
 import Switch_Block from "./Switch_Block/Switch_Block";
 
-const SwitcherBlock = ({ state, set_recommendation_block }) => {
+const SwitcherBlock = ({ state, change_content }) => {
 	const switchers_Object = Object.keys(state).map((key) => {
 		const {
 			name,
@@ -22,7 +22,7 @@ const SwitcherBlock = ({ state, set_recommendation_block }) => {
 		<Switch_Block
 			key={index}
 			props={switchers}
-			set_recommendation_block={set_recommendation_block}
+			change_content={change_content}
 			block_number={index}
 		/>
 	));
