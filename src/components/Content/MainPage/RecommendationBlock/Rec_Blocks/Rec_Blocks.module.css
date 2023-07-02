@@ -18,20 +18,24 @@
 
 @keyframes animation_start {
     from {
+        transform: translateY(0);
         opacity: 1;
     }
 
     to {
+        transform: translateY(64px);
         opacity: 0;
     }
 }
 
 @keyframes animation_end {
     from {
+        transform: translateY(64px);
         opacity: 0;
     }
 
     to {
+        transform: translateY(0);
         opacity: 1;
     }
 }

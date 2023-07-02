@@ -7,7 +7,7 @@ import Rec_Blocks from "./Rec_Blocks/Rec_Blocks";
 const RecommendationBlock = ({ state }) => {
 	const [content_array_number, set_content_array_number] = useState(0);
 	const [background_animated, set_background_animated] = useState(false);
-	const [info_blocks_style, set_info_blocks_style] = useState(css.info_blocks);
+	const [info_blocks_style, set_info_blocks_style] = useState([css.info_blocks, css.switch_animation_end].join(" "));
 	const [circles_animated, set_circles_animated] = useState(false);
 
 	// .information_content.switch_animation_start, .information_name.switch_animation_start, .information_description.switch_animation_start
