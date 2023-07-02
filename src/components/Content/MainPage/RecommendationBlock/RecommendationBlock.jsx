@@ -47,20 +47,18 @@ const RecommendationBlock = ({ state }) => {
 		};
 	});
 
-	// На диво - одноразовий виклик анімації.
-	const [background_image_style, set_background_image_style] = useState(css.recommendation_background_image);
-	const [background_image_number, set_background_image_number] = useState(0);
-
+	const [content_array_number, set_content_array_number] = useState(0);
+	const [background_animated, set_background_animated] = useState(false);
 	const [info_blocks_style, set_info_blocks_style] = useState(css.info_blocks);
 
 	// .information_content.switch_animation_start, .information_name.switch_animation_start, .information_description.switch_animation_start
 	const change_content = (block_number) => {
-		set_background_image_style([css.recommendation_background_image, css.switch_animation_start].join(" "));
+		set_background_animated(true);
 		set_info_blocks_style([css.info_blocks, css.switch_animation_start].join(" "));
 		setTimeout(() => {
-			set_background_image_number(block_number);
-			set_background_image_style([css.recommendation_background_image, css.switch_animation_end].join(" "));
+			set_content_array_number(block_number);
 			set_info_blocks_style([css.info_blocks, css.switch_animation_end].join(" "));
+			set_background_animated(false);
 		}, 1000)
 	};
 	
@@ -69,17 +67,18 @@ const RecommendationBlock = ({ state }) => {
 			<Rec_Blocks
 				key={index}
 				props={recommendation}
-				background_image_style={background_image_style}
 				info_blocks_style={info_blocks_style}
 				state={state}
 				change_content={change_content}
+
+				background_animated={background_animated}
 			/>
 		)
 	);
 
 	return (
 		<div className={css.content}>
-			{recommendations_Elements[background_image_number]}
+			{recommendations_Elements[content_array_number]}
 		</div>
 	);
 };

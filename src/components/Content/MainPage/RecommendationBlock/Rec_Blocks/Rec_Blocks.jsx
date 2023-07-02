@@ -9,7 +9,7 @@ import Links from "./Links/Links";
 
 // .recommendation_background_image .switch_animation
 
-const Rec_Blocks = ({props, background_image_style, info_blocks_style, state, change_content}) => {
+const Rec_Blocks = ({props, info_blocks_style, state, change_content, background_animated}) => {
     const information_props = {
         details_props: {
             view_type: props.view_type,
@@ -31,7 +31,7 @@ const Rec_Blocks = ({props, background_image_style, info_blocks_style, state, ch
 
     return(
         <div className={css.content}>
-            <BackgorundImg img_path={props.big_img_path} background_image_style={background_image_style} />
+            <BackgorundImg img_path={props.big_img_path} background_animated={background_animated} />
             <InformationBlock props={information_props} info_blocks_style={info_blocks_style} />
             <Links props={links_props} info_blocks_style={info_blocks_style} />
 
