@@ -7,11 +7,86 @@
 
     min-height: 95vh;
 }
-
-.convas_More_Recommendation{
+.switchers{
     display: flex;
+
+    gap: 16px;
 
     /* положення переключателя рекомендацій */
     justify-content: flex-end;
 }
 
+@keyframes animation_start {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes animation_end {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bottom_rec_counter{
+    display: flex;
+
+    gap: 16px;
+
+    /* положення переключателя рекомендацій */
+    justify-content: center;
+    color: white;
+
+    margin: -48px 0 48px 0;
+}
+.bottom_rec_counter.animation_start{
+    animation-name: animation_start;
+    animation-duration: 1s;
+}
+.bottom_rec_counter.animation_end{
+    animation-name: animation_end;
+    animation-duration: 1s;
+}
+
+.circle{
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.circle.active{
+    background-color: white;
+}
+
+
+
+.minus, .plus{
+    width: 42px;
+    height: 42px;
+
+    border-radius: 20px;
+    border: 0;
+
+    color: white;
+    background-color: #535353;
+    font-size: 16px;
+    font-family: "FD_Medium";
+
+    margin: -74px 0 128px 0;
+
+    z-index: 999;
+}
+
+.minus:hover, .plus:hover{
+    background-color: #a25e7b;
+    color: black;
+}

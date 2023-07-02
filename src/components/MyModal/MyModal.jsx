@@ -7,7 +7,7 @@ const MyModal = ({close, isActive, children}) => {
 
     return(
         <div className={[css.modal, css.active].join(" ")} onClick={close}>
-            <div className={css.modal__content} onClick={e => e.stopPropagation()}>
+            <div className={css.modal_content} onClick={e => e.stopPropagation()}>
                 {children}
             </div>
         </div>
