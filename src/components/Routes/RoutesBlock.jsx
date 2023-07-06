@@ -8,7 +8,7 @@ const RoutesBlock = ({state}) => {
     return(
         <Routes>
             <Route path="/" element={<MainPage state={state} />} />
-            <Route path="/player_page/:anime_Name" element={<PlayerPage state={state} />} />
+            <Route path="/:anime_name" element={<PlayerPage state={state} />} />
         </Routes>
     );
 };

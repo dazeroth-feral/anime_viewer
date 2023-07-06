@@ -1,0 +1,171 @@
+.all_content{
+    min-height: 94vh;
+}
+
+    .background_div{
+
+    }
+        .background_image{
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            z-index: -999;
+        }
+        .background_image_overlay{
+            background: linear-gradient(0deg, #161616 30.82%, rgba(31, 31, 31, 0.95) 46.67%, rgba(31, 31, 31, 0.00) 100%);
+            background-color: rgba(0, 0, 0, 0.5);
+
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 100vw;
+            height: 100vh;
+
+            z-index: -998;
+        }
+
+
+    .page_content > div{
+        /* опускання всіх контейнерів в пакункови page_content від веху до низу */
+        padding-top: 4em;
+    }
+
+
+        .information_block{
+            display: flex;
+            gap: 42px;
+        }
+
+            .left_block{
+                display: flex;
+                flex-direction: column;
+            }
+                .anime_poster{
+                    width: 260px;
+                    height: 360px;
+
+                    border-radius: 4px;
+                }
+
+            .right_block{
+                display: flex;
+                flex-direction: column;
+                /* відстань між дочірнми елементами цього блоку */
+                gap: 8px;
+            }
+                .anime_name{
+                    color: white;
+                    font-size: 32px;
+                    font-family: "FD_Bold";
+                }
+                .en_anime_name{
+                    color: #DADADA;
+                    font-size: 18px;
+                    font-family: "FD_Medium";
+                }
+                .anime_metadate{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+                    .quality{
+                        padding: 2px 6px 2px 6px;
+
+                        font-size: 14px;
+                        font-family: "FD_Medium";
+
+                        border-radius: 4px;
+                        background: linear-gradient(54deg, #FFB800 0%, #FFCE50 46.35%, #FFB800 100%);
+                    }
+                    .raiting_from_other_site{
+                        color: #FFF73A;
+
+                        font-family: "FD_Medium";
+                        font-size: 14px;
+
+                        padding: 2px 6px 2px 6px;
+
+                        border-radius: 4px;
+                        background: linear-gradient(54deg, #182D33 0%, #294953 46.35%, #182D33 100%);
+                    }
+                    .old_rating{
+                        font-size: 14px;
+                        font-family: "FD_Medium";
+                    }
+                        .old_rating.red{
+                            color: #B81F1F;
+                        }
+                        .old_rating.white{
+                            color: white;
+                        }
+                .anime_bigger_metadate{
+                    color: #DADADA; 
+
+                    font-size: 14px;
+                    font-family: "FD_Medium";
+
+                    display: flex;
+                    /* відстань від блоку з написами статичними і 
+                    написами, що тягнуться з редюсера */
+                    gap: 32px;
+                }
+                    .BM_texts, .BM_information{
+                        /* відстань між написами по типу рік: жанр: тощо */
+                        gap: 8px;
+                    }
+                    .BM_texts{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .BM_information{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                .anime_description_block{
+                    display: flex;
+                    flex-direction: column;
+                    /* відстань від тексту перед описом до самого опису */
+                    padding-top: 16px;
+                    gap: 16px;
+                }
+                    .text_before_description{
+                        color: #DADADA;
+                        font-size: 16px;
+                        font-family: "FD_Medium";
+                    }
+                    .solo_description{
+                        color: #8A8A8A;
+                        font-size: 14px;
+                        font-family: "FD_Medium";
+                    }
+
+        .player_block{
+            display: flex;
+            flex-direction: column;
+
+            /* відстань міш текстом перед плеєром та самим плеєром */
+            gap: 24px;
+        }
+            .text_before_player{
+                color: white;
+
+                font-size: 14px;
+                font-family: "FD_Medium";
+            }
+            .player{
+                width: 100%;
+                height: 679px;
+
+                background-color: gray;
+                border-radius: 10px;
+            }
+            .button_after_player{
+                align-self: flex-end;
+            }
