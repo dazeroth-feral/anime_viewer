@@ -3,6 +3,8 @@ import css from "./PlayerPage.module.css";
 import React from "react";
 import { useParams } from 'react-router-dom';
 
+// :D
+
 const PlayerPage = ({state}) => {
     let { anime_name } = useParams();
     let information_object = state.recommendation_List[anime_name];
